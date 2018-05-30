@@ -1,9 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 // https://doc.qt.io/qt-5/qtimer.html
-
 #include "ballanimation.h"
-
 #include <QLabel>
 #include <QMainWindow>
 #include <QPushButton>
@@ -23,6 +21,7 @@ private slots:
 
 public slots:
     void onbutton1Press(bool toggled);
+
 
 
 private:

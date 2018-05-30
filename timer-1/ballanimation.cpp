@@ -1,23 +1,26 @@
 #include "ballanimation.h"
 #include <QPaintEvent>
-#include<QPainter>
-#include <QDebug>
+#include <QPainter>
+#include<QDebug>
 
 BallAnimation::BallAnimation(QWidget *parent) :
     QWidget(parent),
-    m_origin(QPoint(50,50))
+    m_origin(QPoint(0,0))
+
 {
-  setFixedSize(100,100);
+    setFixedSize(500,500);
 }
 
 void BallAnimation::setOrigin(const QPoint &origin)
 {
-    m_origin =origin;
+    m_origin = origin;
 }
-void BallAnimation::addToOrigin(const QPoint &origin)
+
+void BallAnimation::addToOrigin(const QPoint &point)
 {
- m_origin += point;
+    m_origin += point;
 }
+
 
 void BallAnimation::paintEvent(QPaintEvent *event)
 {

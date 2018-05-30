@@ -16,7 +16,10 @@ public:
 signals:
 
 public slots:
-     void paintEvent(QPaintEvent* event);
+    void paintEvent(QPaintEvent* event);
+
+private:
+    QPoint m_origin;
 };
 
 #endif // BALLANIMATION_H
